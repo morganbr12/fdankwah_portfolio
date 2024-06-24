@@ -1,49 +1,49 @@
+<!-- nav menu -->
 <div class="position">
-    <app-nav-menu></app-nav-menu>
+  <app-nav-menu></app-nav-menu>
 </div>
+<!-- home -->
 <div class="padding-top">
-    <app-home-com></app-home-com>
+  <app-home-com></app-home-com>
 </div>
+
+<!-- about -->
 <app-about></app-about>
+
+<!-- skills -->
 <div class="skills-section">
-    <div class="container">
-      <div class="header">
+  <div class="container">
+    <div class="header">
+      <div class="icon-con">
         <div class="icon-container">
           <span class="icon">0</span>
         </div>
-        <h2>Skills</h2>
-        <p class="subtitle">I am striving to never stop learning and improving</p>
+        <img src="assets/images/code.png" alt="" />
       </div>
-      <div class="content">
-        <div class="skills-category">
-          <div class="category">
-            <h3>Website Development</h3>
-            <p>HTML-CSS-JS-Angular-TypeScript</p>
-          </div>
-          <div class="category">
-            <h3> Mobile App Development</h3>
-            <p>iOS-Android(Flutter, Kotlin, Java)</p>
-          </div>
+      <h2>Skills</h2>
+      <p class="subtitle">I am striving to never stop learning and improving</p>
+    </div>
+    <div class="content">
+      <div class="skills-category">
+        <div class="category">
+          <h3>Website Development</h3>
+          <p>HTML-CSS-JS-Angular-TypeScript</p>
         </div>
-        <div class="skills-icons">
-          <div class="skill">
-            <img src="assets/icons/html-icon.webp" alt="HTML">
-            <p>HTML</p>
-          </div>
-          <div class="skill">
-            <img src="assets/icons/css-icon.png" alt="CSS">
-            <p>CSS</p>
-          </div>
-          <div class="skill">
-            <img src="assets/icons/js-icon.png" alt="JavaScript">
-            <p>JS</p>
-          </div>
-          <div class="skill">
-            <img src="assets/icons/angular-icon.png" alt="React">
-            <p>Angular</p>
-          </div>
+        <div class="category">
+          <h3>Mobile App Development</h3>
+          <p>iOS-Android(Flutter, Kotlin, Java)</p>
         </div>
+      </div>
+      <div class="skills-icons">
+        @for (languages of programmingLanguage; track $index) {
+        <div class="skill">
+          <img [src]="languages.imageUrl" alt="HTML" />
+          <p>{{ languages.title }}</p>
+        </div>
+        }
       </div>
     </div>
   </div>
-  
+</div>
+
+<!-- work -->
