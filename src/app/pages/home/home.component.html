@@ -12,6 +12,9 @@
 
 <!-- skills -->
 <div class="skills-section">
+    <div class="skill-image">
+        <!-- <img src="assets/images/skill-image.jpg" alt=""> -->
+    </div>
   <div class="container">
     <div class="header">
       <div class="icon-con">
@@ -47,3 +50,43 @@
 </div>
 
 <!-- work -->
+
+<div class="work-setup">
+    <div class="bg">
+        <!-- <img src="assets/images/work-bk-img.webp" alt=""> -->
+    </div>
+    <div class="container">
+        <div class="top-icon">
+
+        </div>
+        <div class="title">
+            <h2>Works</h2>
+            <p>I had the pleasure to work on these wonder applications</p>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="icon" (click)="prevProduct()">
+                    <img src="assets/icons/arrow-left.svg" alt="">
+                </div>
+                <div class="product">
+                    <!-- <button (click)="prevProduct()" [disabled]="currentPage === 0">Previous</button> -->
+                    <div class="product-viewer">
+                        <!-- This will dynamically show the current product -->
+                        <div class="product">
+                            <div class="view-product">
+                                <p>View Product</p>
+                            </div>
+                            <div class="image">
+                                <img [src]="currentproduct.imageUrl" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button (click)="nextProduct()" [disabled]="currentPage >= totalProducts - 1">Next</button> -->
+                </div>
+                <div class="icon" (click)="nextProduct()">
+                    <img src="assets/icons/arrow-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

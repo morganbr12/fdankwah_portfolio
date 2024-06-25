@@ -11,12 +11,13 @@ import { AboutComponent } from '../about/about.component';
     NavMenuComponent,
     HomeComComponent,
     AboutComponent,
-    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  currentPage = 0;
 
   programmingLanguage: Langauges[] = [
     {
@@ -52,5 +53,37 @@ export class HomeComponent {
       imageUrl: 'assets/icons/js-icon.png',
     },
   ];
+
+
+  prdouctWorkedOn = [
+    {
+      title: 'eShuttle Scanner App',
+      description: 'This application is mobile applications that is use to scan for tickets. ',
+      imageUrl: 'assets/images/eshuttle1.png',
+    },
+    {
+      title: 'eShuttle Scanner App',
+      description: 'This application is mobile applications that is use to scan for tickets. ',
+      imageUrl: 'assets/images/eshuttle2.png',
+    }
+  ]
+
+  totalProducts = this.prdouctWorkedOn.length;
+
+  get currentproduct() {
+    return this.prdouctWorkedOn[this.currentPage];
+  }
+
+  prevProduct() {
+    if (this.currentPage > 0) {
+      this.currentPage--;
+    }
+  }
+
+  nextProduct() {
+    if (this.currentPage < this.totalProducts -1) {
+      this.currentPage++;
+    }
+  }
 
 }
