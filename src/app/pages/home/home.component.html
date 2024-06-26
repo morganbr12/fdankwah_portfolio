@@ -12,9 +12,9 @@
 
 <!-- skills -->
 <div class="skills-section">
-    <div class="skill-image">
-        <!-- <img src="assets/images/skill-image.jpg" alt=""> -->
-    </div>
+  <div class="skill-image">
+    <!-- <img src="assets/images/skill-image.jpg" alt=""> -->
+  </div>
   <div class="container">
     <div class="header">
       <div class="icon-con">
@@ -52,41 +52,90 @@
 <!-- work -->
 
 <div class="work-setup">
-    <div class="bg">
-        <!-- <img src="assets/images/work-bk-img.webp" alt=""> -->
+  <div class="bg">
+    <!-- <img src="assets/images/work-bk-img.webp" alt=""> -->
+  </div>
+  <div class="container">
+    <div class="top-icon"></div>
+    <div class="title">
+      <h2>Works</h2>
+      <p>I had the pleasure to work on these wonder applications</p>
     </div>
-    <div class="container">
-        <div class="top-icon">
-
+    <div class="content">
+      <div class="row">
+        <div class="icon" (click)="prevProduct()">
+          <img src="assets/icons/arrow-left.svg" alt="" />
         </div>
-        <div class="title">
-            <h2>Works</h2>
-            <p>I had the pleasure to work on these wonder applications</p>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="icon" (click)="prevProduct()">
-                    <img src="assets/icons/arrow-left.svg" alt="">
-                </div>
-                <div class="product">
-                    <!-- <button (click)="prevProduct()" [disabled]="currentPage === 0">Previous</button> -->
-                    <div class="product-viewer">
-                        <!-- This will dynamically show the current product -->
-                        <div class="product">
-                            <div class="view-product">
-                                <p>View Product</p>
-                            </div>
-                            <div class="image">
-                                <img [src]="currentproduct.imageUrl" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <button (click)="nextProduct()" [disabled]="currentPage >= totalProducts - 1">Next</button> -->
-                </div>
-                <div class="icon" (click)="nextProduct()">
-                    <img src="assets/icons/arrow-right.svg" alt="">
-                </div>
+        <div class="product">
+          <!-- <button (click)="prevProduct()" [disabled]="currentPage === 0">Previous</button> -->
+          <div class="product-viewer">
+            <!-- This will dynamically show the current product -->
+            <div class="product">
+              <div class="view-product">
+                <p>View Product</p>
+              </div>
+              <div class="image">
+                <img [src]="currentproduct.imageUrl" alt="" />
+              </div>
             </div>
+          </div>
+          <!-- <button (click)="nextProduct()" [disabled]="currentPage >= totalProducts - 1">Next</button> -->
         </div>
+        <div class="icon" (click)="nextProduct()">
+          <img src="assets/icons/arrow-right.svg" alt="" />
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- blog -->
+<div class="blog-setup">
+  <div class="container">
+    <div class="icon"></div>
+    <div class="title">
+      <h2>Blog</h2>
+      <p>
+        My thoughts on technology, health and businsess, welcome to subscribe
+      </p>
+    </div>
+    <div class="content">
+      <div class="divider"></div>
+      <div class="row">
+        <div class="leading"></div>
+        <div class="cont">
+          <div class="title1">
+            <h2>What does it take to become a web developer</h2>
+          </div>
+          <div class="sub">
+            <p>
+              Web development also know as website development, encompasess of
+              variety of task and process involved in creating a websites for
+              the internet
+            </p>
+          </div>
+          <div class="read-more">
+            <p>
+              Read more 
+            </p>
+            <img src="assets/icons/arrow-right.svg" />
+            <img src="assets/icons/arrow-right.svg"/>
+          </div>
+          <div class="row">
+            <div class="btn">
+              <p>Web developer</p>
+            </div>
+            <div class="text">Text <span>Fredrick</span></div>
+            <div class="text">Date <span>1st october 2021</span></div>
+            <div class="text">Read <span>1 min</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row2">
+        <div class="btn1">View more</div>
+        <div class="btn2">Subscribe</div>
+      </div>
+    </div>
+  </div>
 </div>
