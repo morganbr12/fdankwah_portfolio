@@ -1,0 +1,131 @@
+//   blog
+
+.blog-setup {
+    margin: 0px;
+    background-color: #292f36;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            margin: 50px;
+        
+            h2 {
+            text-align: center;
+            font-size: 25px;
+            color: #4ecdc4;
+            }
+
+            p {
+                font-size: 14px;
+                color: white;
+            }
+        }
+
+        .content {
+            
+            .divider {
+                height: 1px;
+                background-color: #ccc;
+                width: 100%;
+                margin: 40px 0px;
+            }
+
+            .row {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+
+                .leading {
+                    height: 240px;
+                    width: 240px;
+
+                    // TODO: add more design
+                }
+
+                .title1 {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        color: #4ecdc4;
+                    }
+                }
+
+                .sub {
+                    margin-bottom: 30px;
+                    width: 100%;
+                    max-width: 800px;
+                }
+
+                .read-more {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-bottom: 10px;
+
+                    p {
+                        color: #4ecdc4;
+                    }
+
+                    img {
+                        margin: 0px;
+                        padding: 0px;
+                        color: #4ecdc4;
+                        
+                    }
+                }
+
+                .read-more:hover {
+                    cursor: pointer;
+                }
+
+                .btn {
+                    background-color: #ccc;
+                    padding: 5px 10px;
+                    border-radius: 7px;
+                }
+
+                .text {
+                    color: white;
+
+                    span {
+                        color: grey;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            .row2 {
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+                margin-top: 25vh;
+                margin-bottom: 5vh;
+
+                .btn1 {
+                    background-color: #4ecdc4;
+                    padding: 5px 15px;
+                    border-radius: 50px;
+                }
+
+                .btn1:hover, .btn2:hover {
+                    cursor: pointer;
+                    opacity: 0.2;
+                }
+
+                .btn2 {
+                    border: 1px solid #4ecdc4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 15px;
+                    border-radius: 50px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

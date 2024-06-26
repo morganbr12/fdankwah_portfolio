@@ -3,6 +3,7 @@ import { HomeComComponent } from '../../components/home-com/home-com.component';
 import { NavMenuComponent } from '../../components/nav-menu/nav-menu.component';
 import { Langauges } from '../../interfaces/langauges';
 import { AboutComponent } from '../about/about.component';
+import { BlogComponent } from '../blog/blog.component';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ import { AboutComponent } from '../about/about.component';
     NavMenuComponent,
     HomeComComponent,
     AboutComponent,
+    BlogComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
