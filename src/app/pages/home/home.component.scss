@@ -181,6 +181,10 @@
                     box-shadow: 1px 1px black;
                 }
 
+                .icon:hover {
+                    cursor: pointer;
+                }
+
                 .product {
                     display: flex;
                     flex-direction: column;
