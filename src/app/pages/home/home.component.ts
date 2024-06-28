@@ -4,6 +4,7 @@ import { NavMenuComponent } from '../../components/nav-menu/nav-menu.component';
 import { Langauges } from '../../interfaces/langauges';
 import { AboutComponent } from '../about/about.component';
 import { BlogComponent } from '../blog/blog.component';
+import { HomeBlogComponent } from '../home-blog/home-blog.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { BlogComponent } from '../blog/blog.component';
     NavMenuComponent,
     HomeComComponent,
     AboutComponent,
-    BlogComponent,
+    HomeBlogComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
